@@ -1,0 +1,41 @@
+﻿<Window x:Class="lb6.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Banking Operations" Height="500" Width="500">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="0.15*" />
+            <RowDefinition Height="0.15*" />
+            <RowDefinition Height="0.15*" />
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.3*" />
+        </Grid.RowDefinitions>
+
+
+        <Label Grid.Row="0" Content="User Name:" Name="UserNameLabel"/>
+
+        <Label Grid.Row="1" Content="Id:" Name="IdLabel" />
+
+        <Label Grid.Row="2" Content="Deposit amount:" />
+        <TextBox Grid.Row="3" Margin="5" Name="DepositTextBox" />
+
+        <Label Grid.Row="4" Content="Withdrawal amount:" />
+        <TextBox Grid.Row="5" Margin="5" Name="WithdrawalTextBox" />
+
+        <Button Grid.Row="6" Margin="5" Name="GetBalanceButton" Content="Get Balance" Click="GetBalanceButton_Click"/>
+
+        <Button Grid.Row="7" Margin="5" Name="DepositButton" Content="Deposit" Click="DepositButton_Click"/>
+
+        <Button Grid.Row="8" Margin="5" Name="WithdrawButton" Content="Withdraw" Click="WithdrawButton_Click" />
+
+        <Label Grid.Row="9" Name="BalanceLabel" Margin="5" />
+
+        <Label Grid.Row="10" Name="StatusLabel" Margin="5" />
+    </Grid>
+</Window>
